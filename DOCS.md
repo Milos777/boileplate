@@ -1,39 +1,28 @@
-# FastShell Docs
+# Diwanee-boilerplate Docs
 
 ## Project setup and Gulp installation
-FastShell utilises open source components running on the Terminal/command-line for it's workflow, you'll need to install Node and Gulp. Here's a walkthrough of how to get a project up and running in minutes. Once Node and Gulp are installed all future projects running Gulp are instant.
+Diwanee-boilerplate utilises open source components running on the Terminal/command-line for it's workflow, you'll need to install Node and Gulp. Here's a walkthrough of how to get a project up and running in minutes. Once Node and Gulp are installed all future projects running Gulp are instant.
 
 1. Install [Node.js](http://nodejs.org/download), [Sass](http://sass-lang.com/tutorial.html) and [Git](http://git-scm.com) on your machine. If you're a Windows user you'll also need to install [Ruby](http://rubyinstaller.org/downloads).
 2. [Install Gulp](http://Gulpjs.com/) using `npm install -g gulp`. You may need to use `sudo` in front of the Gulp install command to give it permissions.
 3. Fork/Clone/Download the FastShell repository into your machine, you should hopefully see all the files and folders.
-4. Open Terminal and install FastShell's dependencies to `node_modules` directory in your project directory using `npm install`. You don't need `sudo` to do this.
-5. The `npm install` you did in previous step should install all the dependencies, which you can confirm by visiting the `node_modules` in your project directory. Then use `gulp` (again in your project directory) to run the commands associated with FastShell and to automatically open a new FastShell project running on `localhost:3002`.
-6. From now on, just run `gulp` in your project directory to automatically run FastShell's Gulp tasks.
+4. Open Terminal and install Diwanee-boilerplate's dependencies to `node_modules` directory in your project directory using `npm install`. You don't need `sudo` to do this.
+5. The `npm install` you did in previous step should install all the dependencies, which you can confirm by visiting the `node_modules` in your project directory. Then use `gulp` (again in your project directory) to run the commands associated with Diwanee-boilerplate and to automatically open a new Diwanee-boilerplate project running on `localhost:3002`.
+6. From now on, just run `gulp` in your project directory to automatically run Diwanee-boilerplate's Gulp tasks.
 
-## How to use FastShell
-Using FastShell is very easy, it's based on an easy philosphy of keeping things simple so that anybody can use it, even with zero experience on the command-line. FastShell uses Gulp to manage all the essential tasks for building with the web.
+## How to use Diwanee-boilerplate
+Using Diwanee-boilerplate is very easy, it's based on an easy philosphy of keeping things simple so that anybody can use it, even with zero experience on the command-line. Diwanee-boilerplate uses Gulp to manage all the essential tasks for building with the web.
 
 ### Scaffolding
-FastShell's scaffolding is lightweight and super easy. It takes into account a build directory of which you'll compile all your necessary code into. It keeps precious development files (raw `.scss` and `.js`) out of deployment, with a view that you'll be deploying just the contents of the `app` folder onto the server.
+Diwanee-boilerplate's scaffolding is lightweight and super easy. It takes into account a build directory of which you'll compile all your necessary code into. It keeps precious development files (raw `.scss` and `.js`) out of deployment, with a view that you'll be deploying just the contents of the `app` folder onto the server.
 
-Once running, FastShell does the following:
+Once running, Diwanee-boilerplate does the following:
 
 1. Mounts the `app` folder onto a local server
 2. Listens for changes inside the `src` directory, and compiles the necessary files into the `app` directory, which will then automaticaly livereload or inject changes. CSS changes are injected, all other changes force a page reload.
 
 ### Dynamic copyright/project banners
-The package.json includes the dependencies for the project as well as information about the project. Entries here will be dynamically appended to the top of generated `.css` and `.js` files, by default it ships with FastShell's banner:
-
-````js
-/*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
- * @version 1.0.0
- * Copyright 2014. MIT licensed.
- */
-````
+The package.json includes the dependencies for the project as well as information about the project. Entries here will be dynamically appended to the top of generated `.css` and `.js` files, by default it ships with Diwanee-boilerplate's banner:
 
 ### Browser-Sync
 Gulp's browser-sync will inject the following script into your HTML for you (not included when you deploy):
